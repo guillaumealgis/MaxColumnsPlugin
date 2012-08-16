@@ -1,0 +1,249 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F09D96A715DCEFDA0054F887 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09D96A615DCEFDA0054F887 /* CoreFoundation.framework */; };
+		F09D96AD15DCEFDA0054F887 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F09D96AB15DCEFDA0054F887 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F09D96A315DCEFDA0054F887 /* MaxColumnsPlugin.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaxColumnsPlugin.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09D96A615DCEFDA0054F887 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F09D96AA15DCEFDA0054F887 /* MaxColumnsPlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MaxColumnsPlugin-Info.plist"; sourceTree = "<group>"; };
+		F09D96AC15DCEFDA0054F887 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F09D96AE15DCEFDA0054F887 /* MaxColumnsPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MaxColumnsPlugin-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F09D96A015DCEFDA0054F887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09D96A715DCEFDA0054F887 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F09D969815DCEFD90054F887 = {
+			isa = PBXGroup;
+			children = (
+				F09D96A815DCEFDA0054F887 /* MaxColumnsPlugin */,
+				F09D96A515DCEFDA0054F887 /* Frameworks */,
+				F09D96A415DCEFDA0054F887 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F09D96A415DCEFDA0054F887 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F09D96A315DCEFDA0054F887 /* MaxColumnsPlugin.mailbundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F09D96A515DCEFDA0054F887 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F09D96A615DCEFDA0054F887 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F09D96A815DCEFDA0054F887 /* MaxColumnsPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				F09D96A915DCEFDA0054F887 /* Supporting Files */,
+			);
+			path = MaxColumnsPlugin;
+			sourceTree = "<group>";
+		};
+		F09D96A915DCEFDA0054F887 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F09D96AA15DCEFDA0054F887 /* MaxColumnsPlugin-Info.plist */,
+				F09D96AB15DCEFDA0054F887 /* InfoPlist.strings */,
+				F09D96AE15DCEFDA0054F887 /* MaxColumnsPlugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F09D96A215DCEFDA0054F887 /* MaxColumnsPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F09D96B115DCEFDA0054F887 /* Build configuration list for PBXNativeTarget "MaxColumnsPlugin" */;
+			buildPhases = (
+				F09D969F15DCEFDA0054F887 /* Sources */,
+				F09D96A015DCEFDA0054F887 /* Frameworks */,
+				F09D96A115DCEFDA0054F887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaxColumnsPlugin;
+			productName = MaxColumnsPlugin;
+			productReference = F09D96A315DCEFDA0054F887 /* MaxColumnsPlugin.mailbundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F09D969A15DCEFD90054F887 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = F09D969D15DCEFD90054F887 /* Build configuration list for PBXProject "MaxColumnsPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F09D969815DCEFD90054F887;
+			productRefGroup = F09D96A415DCEFDA0054F887 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F09D96A215DCEFDA0054F887 /* MaxColumnsPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F09D96A115DCEFDA0054F887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09D96AD15DCEFDA0054F887 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F09D969F15DCEFDA0054F887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F09D96AB15DCEFDA0054F887 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F09D96AC15DCEFDA0054F887 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F09D96AF15DCEFDA0054F887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F09D96B015DCEFDA0054F887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F09D96B215DCEFDA0054F887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MaxColumnsPlugin/MaxColumnsPlugin-Prefix.pch";
+				INFOPLIST_FILE = "MaxColumnsPlugin/MaxColumnsPlugin-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Mail/Bundles/";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = mailbundle;
+			};
+			name = Debug;
+		};
+		F09D96B315DCEFDA0054F887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MaxColumnsPlugin/MaxColumnsPlugin-Prefix.pch";
+				INFOPLIST_FILE = "MaxColumnsPlugin/MaxColumnsPlugin-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Mail/Bundles/";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = mailbundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F09D969D15DCEFD90054F887 /* Build configuration list for PBXProject "MaxColumnsPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F09D96AF15DCEFDA0054F887 /* Debug */,
+				F09D96B015DCEFDA0054F887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F09D96B115DCEFDA0054F887 /* Build configuration list for PBXNativeTarget "MaxColumnsPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F09D96B215DCEFDA0054F887 /* Debug */,
+				F09D96B315DCEFDA0054F887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F09D969A15DCEFD90054F887 /* Project object */;
+}
