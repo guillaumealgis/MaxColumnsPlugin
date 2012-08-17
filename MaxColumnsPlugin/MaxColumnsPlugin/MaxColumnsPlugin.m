@@ -18,7 +18,8 @@ NSBundle *GMGetMaxColumnsBundle(void)
 	return [NSBundle bundleForClass:[MCMaxColumnsPlugin class]];
 }
 
-static int maxColumns = 80; // Is overrided at initialize time by Info.plist (MCMaxColumnsWrap)
+#define DEFAULT_MAX_COLUMNS 80
+static int maxColumns = DEFAULT_MAX_COLUMNS; // Is overrided at initialize time by Info.plist (MCMaxColumnsWrap)
 
 @implementation MCMaxColumnsPlugin
 
@@ -41,6 +42,7 @@ static int maxColumns = 80; // Is overrided at initialize time by Info.plist (MC
 		[MCMaxColumnsPlugin registerBundle];
         
         maxColumns = [(NSNumber *)[GMGetMaxColumnsBundle() objectForInfoDictionaryKey:@"MCMaxColumnsWrap"] intValue];
+        maxColumns = maxColumns > 1 ? maxColumns : DEFAULT_MAX_COLUMNS;
         
 		NSLog(@"[INFO] Loaded MaxColumnsPlugin %@", [GMGetMaxColumnsBundle() objectForInfoDictionaryKey:@"CFBundleShortVersionString"]);
         
