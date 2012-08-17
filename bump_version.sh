@@ -60,6 +60,6 @@ replacePlistValueFromKey 'CFBundleShortVersionString' $NEW_VERSION_STRING $PLIST
 replacePlistValueFromKey 'CFBundleVersion' $NEW_VERSION $PLIST_FILE
 
 # Replace version in Readme
-sed -E -i '.bak' -e 's!(# '${PROGRAM}') [0-9a-z.]+!\1 '${NEW_VERSION_STRING}'!' $README_FILE
+sed -E -i '' -e 's!(# '${PROGRAM}') [0-9a-z.]+!\1 '${NEW_VERSION_STRING}'!' $README_FILE
 
 echo 'Version bumped to ' ${NEW_VERSION_STRING} '('${NEW_VERSION}')'
