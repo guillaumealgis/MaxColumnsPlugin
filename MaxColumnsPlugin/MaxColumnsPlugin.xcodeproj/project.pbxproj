@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		F09D96A715DCEFDA0054F887 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09D96A615DCEFDA0054F887 /* CoreFoundation.framework */; };
 		F09D96AD15DCEFDA0054F887 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F09D96AB15DCEFDA0054F887 /* InfoPlist.strings */; };
+		F09D96FD15DD4C2F0054F887 /* MaxColumnsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = F09D96FA15DD4C2F0054F887 /* MaxColumnsPlugin.m */; };
+		F09D970215DD4C6F0054F887 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09D970015DD4C690054F887 /* Cocoa.framework */; };
+		F0A5200515DD9836004D9074 /* NSString+SSToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5200415DD9836004D9074 /* NSString+SSToolkitAdditions.m */; };
+		F0A5200815DDB2CD004D9074 /* NSString+MCWrap.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5200715DDB2CD004D9074 /* NSString+MCWrap.m */; };
+		F0A5200B15DDB69B004D9074 /* NSCharacterSet+MCExtendedWhitespaces.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5200A15DDB69B004D9074 /* NSCharacterSet+MCExtendedWhitespaces.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +22,15 @@
 		F09D96AA15DCEFDA0054F887 /* MaxColumnsPlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MaxColumnsPlugin-Info.plist"; sourceTree = "<group>"; };
 		F09D96AC15DCEFDA0054F887 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F09D96AE15DCEFDA0054F887 /* MaxColumnsPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MaxColumnsPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		F09D96F915DD4C2F0054F887 /* MaxColumnsPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxColumnsPlugin.h; sourceTree = "<group>"; };
+		F09D96FA15DD4C2F0054F887 /* MaxColumnsPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaxColumnsPlugin.m; sourceTree = "<group>"; };
+		F09D970015DD4C690054F887 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F0A5200315DD9836004D9074 /* NSString+SSToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SSToolkitAdditions.h"; sourceTree = "<group>"; };
+		F0A5200415DD9836004D9074 /* NSString+SSToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SSToolkitAdditions.m"; sourceTree = "<group>"; };
+		F0A5200615DDB2CD004D9074 /* NSString+MCWrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MCWrap.h"; sourceTree = "<group>"; };
+		F0A5200715DDB2CD004D9074 /* NSString+MCWrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MCWrap.m"; sourceTree = "<group>"; };
+		F0A5200915DDB69B004D9074 /* NSCharacterSet+MCExtendedWhitespaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCharacterSet+MCExtendedWhitespaces.h"; sourceTree = "<group>"; };
+		F0A5200A15DDB69B004D9074 /* NSCharacterSet+MCExtendedWhitespaces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCharacterSet+MCExtendedWhitespaces.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F09D96A715DCEFDA0054F887 /* CoreFoundation.framework in Frameworks */,
+				F09D970215DD4C6F0054F887 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +66,7 @@
 		F09D96A515DCEFDA0054F887 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F09D970015DD4C690054F887 /* Cocoa.framework */,
 				F09D96A615DCEFDA0054F887 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
@@ -59,7 +75,15 @@
 		F09D96A815DCEFDA0054F887 /* MaxColumnsPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				F09D96F915DD4C2F0054F887 /* MaxColumnsPlugin.h */,
+				F09D96FA15DD4C2F0054F887 /* MaxColumnsPlugin.m */,
 				F09D96A915DCEFDA0054F887 /* Supporting Files */,
+				F0A5200315DD9836004D9074 /* NSString+SSToolkitAdditions.h */,
+				F0A5200415DD9836004D9074 /* NSString+SSToolkitAdditions.m */,
+				F0A5200615DDB2CD004D9074 /* NSString+MCWrap.h */,
+				F0A5200715DDB2CD004D9074 /* NSString+MCWrap.m */,
+				F0A5200915DDB69B004D9074 /* NSCharacterSet+MCExtendedWhitespaces.h */,
+				F0A5200A15DDB69B004D9074 /* NSCharacterSet+MCExtendedWhitespaces.m */,
 			);
 			path = MaxColumnsPlugin;
 			sourceTree = "<group>";
@@ -135,6 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09D96FD15DD4C2F0054F887 /* MaxColumnsPlugin.m in Sources */,
+				F0A5200515DD9836004D9074 /* NSString+SSToolkitAdditions.m in Sources */,
+				F0A5200815DDB2CD004D9074 /* NSString+MCWrap.m in Sources */,
+				F0A5200B15DDB69B004D9074 /* NSCharacterSet+MCExtendedWhitespaces.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +270,7 @@
 				F09D96B315DCEFDA0054F887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

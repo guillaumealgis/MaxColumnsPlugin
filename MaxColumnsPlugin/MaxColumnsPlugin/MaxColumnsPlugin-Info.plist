@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>0.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
@@ -40,7 +40,16 @@
 	</dict>
 	<key>CFPlugInUnloadFunction</key>
 	<string></string>
+	<key>MCMaxColumnsWrap</key>
+	<integer>80</integer>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2012 Guillaume Algis. All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>MaxColumnsPlugin</string>
+	<key>SupportedPluginCompatibilityUUIDs</key>
+	<array>
+		<string>EF59EC5E-EFCD-4EA7-B617-6C5708397D24</string>
+		<string>4C286C70-7F18-4839-B903-6F2D58FA4C71</string>
+	</array>
 </dict>
 </plist>
