@@ -1,4 +1,4 @@
-# MaxColumnsPlugin 0.1
+# MaxColumnsPlugin 0.2
 
 A OS X Mail.app plugin to trim trailing whitespaces and wrap your emails to 80 columns.  
 Only tidy up plain text messages (either use "Format > Convert to plain text format" when writing your mail, or make it the default in Mail's preferences).
