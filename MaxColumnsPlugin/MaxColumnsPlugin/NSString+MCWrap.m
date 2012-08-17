@@ -9,6 +9,9 @@
 #import "NSString+MCWrap.h"
 #import "NSCharacterSet+MCExtendedWhitespaces.h"
 
+// Debug macro
+//#define dumpRange(x) (NSLog( @"RangeDump :: Value of %s = { %lu, %lu } : \"%@\"",#x, x.location, x.length, x.location != NSNotFound ? [self substringWithRange:x] : @"##NSNotFound"))
+
 @implementation NSString (MCWrap)
 
 - (NSString *)stringByWrappingToMaxColumns:(NSInteger)maxCols {
@@ -33,7 +36,7 @@
             if (rangeOfLastUnwantedCharacter.location == NSNotFound) {
                 // In the case of a contiguous chunk of non-whitespaces chars, we take the whole chunks
                 rangeOfLastUnwantedCharacter.location = searchRange.location + searchRange.length;
-                rangeOfLastUnwantedCharacter.length = 1;
+                rangeOfLastUnwantedCharacter.length = 0;
             }
             
             // Prepare for the selection of the "interesting" part of the chunk
@@ -54,7 +57,7 @@
                 [mutableString appendString:@"\n"];
             
             // Set the next chunk position for next iteration
-            searchRange.location = rangeOfLastUnwantedCharacter.location + 1;
+            searchRange.location = rangeOfLastUnwantedCharacter.location + rangeOfLastUnwantedCharacter.length;
         }
     }
     
