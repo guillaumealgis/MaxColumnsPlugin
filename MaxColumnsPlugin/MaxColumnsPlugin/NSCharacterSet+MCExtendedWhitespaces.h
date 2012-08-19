@@ -10,6 +10,7 @@
 
 @interface NSCharacterSet (MCExtendedWhitespaces)
 
++ (id)extendedWhitespaceCharacterSet;
 + (id)extendedWhitespaceAndNewlineCharacterSet;
 
 @end

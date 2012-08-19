@@ -55,7 +55,7 @@ You just DO WHAT THE FUCK YOU WANT TO.
     
 See https://github.com/guillaume-algis/MaxColumnsPlugin for more informations.</string>
 	<key>NSPrincipalClass</key>
-	<string>MaxColumnsPlugin</string>
+	<string>MCMaxColumnsPlugin</string>
 	<key>SupportedPluginCompatibilityUUIDs</key>
 	<array>
 		<string>EF59EC5E-EFCD-4EA7-B617-6C5708397D24</string>

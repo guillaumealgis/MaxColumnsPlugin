@@ -10,6 +10,8 @@
 
 @interface NSString (MCWrap)
 
-- (NSString *)stringByWrappingToMaxColumns:(NSInteger)maxCols;
+//- (NSString *)stringByWrappingToMaxColumns:(NSInteger)maxCols;
+- (NSArray *)componentsOfLength:(NSInteger)componentLength;
+- (NSArray *)componentsOfLength:(NSInteger)componentLength withOffset:(NSInteger)offset;
 
 @end
