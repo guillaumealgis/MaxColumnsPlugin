@@ -41,7 +41,7 @@
 	<key>CFPlugInUnloadFunction</key>
 	<string></string>
 	<key>MCMaxColumnsWrap</key>
-	<integer>80</integer>
+	<integer>77</integer>
 	<key>NSHumanReadableCopyright</key>
 	<string>DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE Version 2, December 2004
 

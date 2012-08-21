@@ -13,6 +13,7 @@
 		F0A5200515DD9836004D9074 /* NSString+SSToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5200415DD9836004D9074 /* NSString+SSToolkitAdditions.m */; };
 		F0A5200815DDB2CD004D9074 /* NSString+MCWrap.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5200715DDB2CD004D9074 /* NSString+MCWrap.m */; };
 		F0A5200B15DDB69B004D9074 /* NSCharacterSet+MCExtendedWhitespaces.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A5200A15DDB69B004D9074 /* NSCharacterSet+MCExtendedWhitespaces.m */; };
+		F0CC44C515E0F2E00043A3B7 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CC44C215E0F2D80043A3B7 /* Python.framework */; };
 		F0CEF97E15DEDD1200ED3F68 /* MCDOMWalker.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CEF97D15DEDD1200ED3F68 /* MCDOMWalker.m */; };
 		F0CEF98215DEDE7B00ED3F68 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CEF98015DEDE7200ED3F68 /* WebKit.framework */; };
 		F0CEF98515DFCE5500ED3F68 /* MCExtendedMailDocumentEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CEF98415DFCE5500ED3F68 /* MCExtendedMailDocumentEditor.m */; };
@@ -32,6 +33,7 @@
 		F0A5200715DDB2CD004D9074 /* NSString+MCWrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MCWrap.m"; sourceTree = "<group>"; };
 		F0A5200915DDB69B004D9074 /* NSCharacterSet+MCExtendedWhitespaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCharacterSet+MCExtendedWhitespaces.h"; sourceTree = "<group>"; };
 		F0A5200A15DDB69B004D9074 /* NSCharacterSet+MCExtendedWhitespaces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCharacterSet+MCExtendedWhitespaces.m"; sourceTree = "<group>"; };
+		F0CC44C215E0F2D80043A3B7 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
 		F0CEF97C15DEDD1200ED3F68 /* MCDOMWalker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDOMWalker.h; sourceTree = "<group>"; };
 		F0CEF97D15DEDD1200ED3F68 /* MCDOMWalker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDOMWalker.m; sourceTree = "<group>"; };
 		F0CEF98015DEDE7200ED3F68 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -47,6 +49,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F09D96A715DCEFDA0054F887 /* CoreFoundation.framework in Frameworks */,
+				F0CC44C515E0F2E00043A3B7 /* Python.framework in Frameworks */,
 				F09D970215DD4C6F0054F887 /* Cocoa.framework in Frameworks */,
 				F0CEF98215DEDE7B00ED3F68 /* WebKit.framework in Frameworks */,
 			);
@@ -75,6 +78,7 @@
 		F09D96A515DCEFDA0054F887 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F0CC44C215E0F2D80043A3B7 /* Python.framework */,
 				F0CEF98015DEDE7200ED3F68 /* WebKit.framework */,
 				F09D970015DD4C690054F887 /* Cocoa.framework */,
 				F09D96A615DCEFDA0054F887 /* CoreFoundation.framework */,

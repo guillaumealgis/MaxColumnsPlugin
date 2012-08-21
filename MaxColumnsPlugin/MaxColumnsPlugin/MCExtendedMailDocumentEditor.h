@@ -10,9 +10,14 @@
 
 @interface MCExtendedMailDocumentEditor : NSObject
 
+#pragma mark - MailDocumentEditor methods
+
+- (id)document;
+
+#pragma mark - MCExtendedMailDocumentEditor methods
+
 - (void) removeTrailingWhitespaces;
 - (void) wrapMessageToMaxColumns;
-
 - (void) sendWithCleanup:(id)sender;
 
 @end
