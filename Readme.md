@@ -36,7 +36,7 @@ Tell Mail to enable the support for bundles, if you didn't do it already:
 
 Copy the plugin MaxColumnsPlugin.mailbundle to the Mail.app plugins folder:
 
-    % cp MaxColumnsPlugin.mailbundle $(HOME)/Library/Mail/Bundles/
+    % cp -r MaxColumnsPlugin.mailbundle $(HOME)/Library/Mail/Bundles/
 
 Restart Mail.
 
