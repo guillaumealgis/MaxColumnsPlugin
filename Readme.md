@@ -54,8 +54,7 @@ procedure (but keep in mind that it will not have been tested):
 Open up Terminal (_/Applications/Utilities/Terminal.app_) and type
 
     defaults read /Applications/Mail.app/Contents/Info PluginCompatibilityUUID
-    defaults read /System/Library/Frameworks/Message.framework/Resources/Info
-PluginCompatibilityUUID
+    defaults read /System/Library/Frameworks/Message.framework/Resources/Info PluginCompatibilityUUID
 
 This should print to UUIDs like these ones:
 
