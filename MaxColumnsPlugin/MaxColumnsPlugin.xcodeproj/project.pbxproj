@@ -143,7 +143,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MC;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "Guillaume Algis";
 			};
 			buildConfigurationList = F09D969D15DCEFD90054F887 /* Build configuration list for PBXProject "MaxColumnsPlugin" */;
@@ -223,7 +223,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -244,7 +244,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -252,6 +252,7 @@
 		F09D96B215DCEFDA0054F887 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MaxColumnsPlugin/MaxColumnsPlugin-Prefix.pch";
 				INFOPLIST_FILE = "MaxColumnsPlugin/MaxColumnsPlugin-Info.plist";
@@ -264,6 +265,7 @@
 		F09D96B315DCEFDA0054F887 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MaxColumnsPlugin/MaxColumnsPlugin-Prefix.pch";
 				INFOPLIST_FILE = "MaxColumnsPlugin/MaxColumnsPlugin-Info.plist";

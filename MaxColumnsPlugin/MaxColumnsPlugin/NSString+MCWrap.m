@@ -12,20 +12,14 @@
 
 @implementation NSString (MCWrap)
 
-- (NSString *)stringByWrappingToMaxColumns:(NSInteger)maxCols {  
-    // theargs = ()
-    PyObject *theargs = PyTuple_New(2);
+- (NSString *)stringByWrappingToMaxColumns:(NSInteger)maxCols {
     
-    // theargs[0] = the text to wrap
-    PyTuple_SetItem(theargs, 0, PyString_FromString([self UTF8String]));
+    // res = inst.fill.__call__(*theargs)
+    PyObject *result = PyObject_CallMethod([[MCMaxColumnsPlugin sharedInstance] textWrapperInst],
+                                           "fill",
+                                           "s", [self UTF8String]);
     
-    // theargs[1] = max columns
-    PyTuple_SetItem(theargs, 1, PyInt_FromLong(maxCols));
-    
-    // f = thefunc.__call__(*theargs)
-    PyObject *result = PyObject_CallObject([[MCMaxColumnsPlugin sharedInstance] pyFillFunc], theargs);
-
-    if(!result){
+    if(!result || PyErr_Occurred()){
         NSLog(@"[ERR]  Could not call the Python textwrap.fill() method");
         return @"";
     }
@@ -83,7 +77,5 @@
     
     return [components copy];
 }
-
-
 
 @end

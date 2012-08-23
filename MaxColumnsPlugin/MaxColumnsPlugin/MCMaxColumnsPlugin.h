@@ -10,11 +10,11 @@
 
 @interface MCMaxColumnsPlugin : NSObject {
     NSInteger maxColumns;
-    PyObject *pyFillFunc;
+    PyObject *textWrapperInst;
 }
 
 @property (nonatomic, assign) NSInteger maxColumns;
-@property (nonatomic, assign) PyObject *pyFillFunc;
+@property (nonatomic, assign) PyObject *textWrapperInst;
 
 #pragma mark - MVMailBundle methods
 

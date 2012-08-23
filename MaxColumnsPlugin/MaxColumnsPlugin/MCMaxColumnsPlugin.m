@@ -18,7 +18,7 @@
 #pragma mark - Properties
 
 @synthesize maxColumns = _maxColumns;
-@synthesize pyFillFunc = _pyFillFunc;
+@synthesize textWrapperInst = _textWrapperInst;
 
 #pragma mark - MVMailBundle methods overriding
 
@@ -144,7 +144,7 @@
     Method newMethod = class_getInstanceMethod(mailDocumentEditorClass, new);
     
     if (!origMethod || !newMethod) {
-      	NSLog(@"[ERR]  Could not find method of MailDocumentEditor with selector %@", orig ? new : orig);
+      	NSLog(@"[ERR]  Could not find method of MailDocumentEditor with selector %@", NSStringFromSelector(orig ? new : orig));
         return NO;
     }
     
@@ -160,16 +160,26 @@
     Py_Initialize();
     
     // Import textwrap
-    PyObject *textWrapModule = PyImport_Import(PyString_FromString("textwrap"));
-    // fillMethod = textwrap.fill
-    PyObject *fillMethod = PyObject_GetAttrString(textWrapModule, "fill");
+    PyObject *textWrapModule = PyImport_ImportModule("textwrap");
     
-    // if callable(fillMethod)
-    if (!(fillMethod && PyCallable_Check(fillMethod))) {
+    if (PyErr_Occurred()) {
+        NSLog(@"[ERR]  Error while fetching Python textwrap module");
         return NO;
     }
     
-    self.pyFillFunc = fillMethod;
+    // Instanciate the TextWrapper class
+    PyObject *textWrapperClass = PyObject_GetAttrString(textWrapModule, "TextWrapper");
+    PyObject *args = Py_BuildValue("()");
+    PyObject *kwargs = Py_BuildValue("{sisisi}",
+                                     "width", self.maxColumns,
+                                     "expand_tabs", false,
+                                     "replace_whitespace", false);
+    self.textWrapperInst = PyObject_Call(textWrapperClass, args, kwargs);
+    
+    if (PyErr_Occurred()) {
+        NSLog(@"[ERR]  Error while initializing TextWrapper class");
+        return NO;
+    }
     
     return YES;
 }
