@@ -45,6 +45,8 @@ Restart Mail.
 
 - OS X Lion 10.7.4
  - Mail.app 5.3 + Message.framework 5.3
+- OS X Mountain Lion 10.8
+ - Mail.app 6.0 + Message.framework 6.0
 
 - - -
 
