@@ -1,5 +1,5 @@
 
-# MaxColumnsPlugin 0.3
+# MaxColumnsPlugin 0.4
 
 A OS X Mail.app plugin to trim trailing whitespaces and wrap your emails to 77
 columns.
