@@ -51,7 +51,7 @@
 - (void) walkNode:(DOMNode *)aNode AndInjectText:(NSString *)wrappedText {
     if ([aNode nodeType] == DOM_TEXT_NODE) {        
         NSMutableString *newTextNodeValue = [NSMutableString string];
-        
+
         unichar nodeValueChar = 0;
         unichar wrappedTextChar = 0;        
     
@@ -80,8 +80,12 @@
                     ++i;
                 }
             }
+            else if (nodeValueChar == 0x20) {
+                ++i;
+            }
             else {
-                NSLog(@"[ERR]  Non matching characters when recomposing the mail content : '%C' '%C'", nodeValueChar, wrappedTextChar);
+                NSLog(@"[ERR]  Non matching characters when recomposing the mail content : '%C' '%C' (0x%x 0x%x)",
+                      nodeValueChar, wrappedTextChar, nodeValueChar, wrappedTextChar);
                 ++self.charCount;
                 break;
             }

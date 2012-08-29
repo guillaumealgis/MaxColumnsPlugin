@@ -170,10 +170,11 @@
     // Instanciate the TextWrapper class
     PyObject *textWrapperClass = PyObject_GetAttrString(textWrapModule, "TextWrapper");
     PyObject *args = Py_BuildValue("()");
-    PyObject *kwargs = Py_BuildValue("{sisisi}",
+    PyObject *kwargs = Py_BuildValue("{sisisisi}",
                                      "width", self.maxColumns,
                                      "expand_tabs", false,
-                                     "replace_whitespace", false);
+                                     "replace_whitespace", false,
+                                     "drop_whitespace", false);
     self.textWrapperInst = PyObject_Call(textWrapperClass, args, kwargs);
     
     if (PyErr_Occurred()) {
