@@ -1,3 +1,5 @@
+Not maintained anymore. Use at your own risk.
+
 
 # MaxColumnsPlugin 0.5
 
