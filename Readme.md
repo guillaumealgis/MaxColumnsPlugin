@@ -101,19 +101,3 @@ not limited to loss of data or data being rendered inaccurate or losses
 sustained by you or third parties or a failure of the program to operate with
 any other programs), even if the author has been advised of the possibility of
 such damages.
-
-## License
-
-DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-Version 2, December 2004
-
-Copyright (C) 2012 Guillaume Algis <guillaume.algis@gmail.com>
-
-Everyone is permitted to copy and distribute verbatim or modified
-copies of this license document, and changing it is allowed as long
-as the name is changed.
-
-DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
-
-0. You just DO WHAT THE FUCK YOU WANT TO.
